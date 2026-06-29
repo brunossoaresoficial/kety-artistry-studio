@@ -307,7 +307,7 @@ function About() {
             />
           </div>
           <div className="absolute -bottom-8 -right-4 lg:-right-8 bg-background border border-border rounded-2xl p-6 shadow-card max-w-[220px]">
-            <p className="font-serif text-4xl text-gold">+5</p>
+            <p className="font-serif text-4xl text-gold">+2</p>
             <p className="text-sm text-muted-foreground mt-1">anos cuidando da beleza e da autoestima de mulheres únicas.</p>
           </div>
         </div>
