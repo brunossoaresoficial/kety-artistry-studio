@@ -320,7 +320,7 @@ function About() {
           <div className="mt-10 space-y-5 text-base lg:text-lg text-muted-foreground leading-relaxed max-w-2xl">
             <p>
               O <strong className="text-foreground font-medium">Espaço Kety Silva Beauty Studio</strong> nasceu do desejo
-              de oferecer mais do que serviços de beleza — oferecer momentos. Um refúgio
+              de oferecer mais do que serviços de beleza oferecer momentos. Um refúgio
               em <strong className="text-foreground font-medium">Vargem Grande Paulista</strong> onde cada
               detalhe foi cuidado para que você se sinta acolhida, valorizada e, acima
               de tudo, ouvida.
