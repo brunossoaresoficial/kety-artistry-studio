@@ -29,10 +29,12 @@ import gBrows from "@/assets/g-brows.jpg";
 import gFlat from "@/assets/g-flat.jpg";
 
 const PHONE_DISPLAY = "(11) 95683-5290";
-const WHATSAPP = "https://wa.me/5511956835290?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Esp%C3%A7o%20Kety%20Silva.";
+const WHATSAPP =
+  "https://wa.me/5511956835290?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20no%20Esp%C3%A7o%20Kety%20Silva.";
 const INSTAGRAM = "https://instagram.com/ket.ysilvaa";
 const ADDRESS = "R. Valêncio Soares Rodrigues, 178 - C, Centro — Vargem Grande Paulista/SP";
-const MAPS_QUERY = "Espaço+Kety+Silva,+R.+Valêncio+Soares+Rodrigues,+178+-+Centro,+Vargem+Grande+Paulista+-+SP";
+const MAPS_QUERY =
+  "Espaço+Kety+Silva,+R.+Valêncio+Soares+Rodrigues,+178+-+Centro,+Vargem+Grande+Paulista+-+SP";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,7 +48,8 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Espaço Kety Silva Beauty Studio" },
       {
         property: "og:description",
-        content: "Estúdio de beleza premium em Vargem Grande Paulista — agende seu horário pelo WhatsApp.",
+        content:
+          "Estúdio de beleza premium em Vargem Grande Paulista — agende seu horário pelo WhatsApp.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -79,11 +82,31 @@ const services = [
 ];
 
 const differentials = [
-  { icon: Heart, title: "Atendimento personalizado", desc: "Cada cliente é única — cada serviço também." },
-  { icon: Sparkles, title: "Ambiente acolhedor", desc: "Um refúgio sofisticado feito para o seu bem-estar." },
-  { icon: Award, title: "Produtos de qualidade", desc: "Marcas premium e seguras em todos os procedimentos." },
-  { icon: Gem, title: "Profissional qualificada", desc: "Técnica refinada e constante atualização." },
-  { icon: Calendar, title: "Hora marcada", desc: "Sua agenda exclusiva, sem espera e sem corre-corre." },
+  {
+    icon: Heart,
+    title: "Atendimento personalizado",
+    desc: "Cada cliente é única — cada serviço também.",
+  },
+  {
+    icon: Sparkles,
+    title: "Ambiente acolhedor",
+    desc: "Um refúgio sofisticado feito para o seu bem-estar.",
+  },
+  {
+    icon: Award,
+    title: "Produtos de qualidade",
+    desc: "Marcas premium e seguras em todos os procedimentos.",
+  },
+  {
+    icon: Gem,
+    title: "Profissional qualificada",
+    desc: "Técnica refinada e constante atualização.",
+  },
+  {
+    icon: Calendar,
+    title: "Hora marcada",
+    desc: "Sua agenda exclusiva, sem espera e sem corre-corre.",
+  },
 ];
 
 const gallery = [
@@ -161,7 +184,12 @@ function Nav() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <a href={WHATSAPP} target="_blank" rel="noopener" className="hidden sm:inline-flex btn-primary text-xs px-5 py-3">
+          <a
+            href={WHATSAPP}
+            target="_blank"
+            rel="noopener"
+            className="hidden sm:inline-flex btn-primary text-xs px-5 py-3"
+          >
             Agendar
           </a>
           <button
@@ -193,7 +221,12 @@ function Nav() {
                 {label}
               </a>
             ))}
-            <a href={WHATSAPP} target="_blank" rel="noopener" className="btn-primary mt-6 self-start">
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noopener"
+              className="btn-primary mt-6 self-start"
+            >
               Agendar pelo WhatsApp
             </a>
           </nav>
@@ -217,16 +250,17 @@ function Hero() {
             Beleza que <em className="italic text-gold">revela</em> a sua melhor versão.
           </h1>
           <p className="mt-8 text-base sm:text-lg text-muted-foreground max-w-xl leading-relaxed">
-            Um estúdio sofisticado onde cada detalhe é pensado para acolher,
-            valorizar e transformar. Unhas, cílios e sobrancelhas com requinte
-            e atendimento personalizado.
+            Um estúdio sofisticado onde cada detalhe é pensado para acolher, valorizar e
+            transformar. Unhas, cílios e sobrancelhas com requinte e atendimento personalizado.
           </p>
           <div className="mt-10 flex flex-wrap gap-4">
             <a href={WHATSAPP} target="_blank" rel="noopener" className="btn-primary">
               <MessageCircle className="size-4" />
               Agendar pelo WhatsApp
             </a>
-            <a href="#servicos" className="btn-ghost">Ver Serviços</a>
+            <a href="#servicos" className="btn-ghost">
+              Ver Serviços
+            </a>
           </div>
 
           <div className="mt-14 flex items-center gap-8 text-sm text-muted-foreground">
@@ -260,7 +294,9 @@ function Hero() {
                 <Sparkles className="size-5 text-background" />
               </div>
               <div>
-                <p className="text-xs uppercase tracking-widest text-muted-foreground">Alta procura</p>
+                <p className="text-xs uppercase tracking-widest text-muted-foreground">
+                  Alta procura
+                </p>
                 <p className="font-serif text-lg leading-tight">Agenda quase cheia</p>
               </div>
             </div>
@@ -281,7 +317,10 @@ function Marquee() {
     <div className="border-y border-border/60 bg-champagne/40 overflow-hidden">
       <div className="flex gap-16 py-5 whitespace-nowrap animate-[shimmer_6s_ease-in-out_infinite] justify-center flex-wrap">
         {items.map((item, i) => (
-          <span key={i} className="font-serif italic text-2xl text-foreground/70 flex items-center gap-16">
+          <span
+            key={i}
+            className="font-serif italic text-2xl text-foreground/70 flex items-center gap-16"
+          >
             {item}
             <span className="size-1.5 rounded-full bg-gold" />
           </span>
@@ -308,7 +347,9 @@ function About() {
           </div>
           <div className="absolute -bottom-8 -right-4 lg:-right-8 bg-background border border-border rounded-2xl p-6 shadow-card max-w-[220px]">
             <p className="font-serif text-4xl text-gold">+2</p>
-            <p className="text-sm text-muted-foreground mt-1">anos cuidando da beleza e da autoestima de mulheres únicas.</p>
+            <p className="text-sm text-muted-foreground mt-1">
+              anos cuidando da beleza e da autoestima de mulheres únicas.
+            </p>
           </div>
         </div>
 
@@ -319,16 +360,20 @@ function About() {
           </h2>
           <div className="mt-10 space-y-5 text-base lg:text-lg text-muted-foreground leading-relaxed max-w-2xl">
             <p>
-              O <strong className="text-foreground font-medium">Espaço Kety Silva Beauty Studio</strong> nasceu do desejo
-              de oferecer mais do que serviços de beleza oferecer momentos. Um refúgio
-              em <strong className="text-foreground font-medium">Vargem Grande Paulista</strong> onde cada
-              detalhe foi cuidado para que você se sinta acolhida, valorizada e, acima
-              de tudo, ouvida.
+              O{" "}
+              <strong className="text-foreground font-medium">
+                Espaço Kety Silva Beauty Studio
+              </strong>{" "}
+              nasceu do desejo de oferecer mais do que serviços de beleza — oferecer momentos. Um
+              refúgio em{" "}
+              <strong className="text-foreground font-medium">Vargem Grande Paulista</strong> onde
+              cada detalhe foi cuidado para que você se sinta acolhida, valorizada e, acima de tudo,
+              ouvida.
             </p>
             <p>
-              Aqui, cada procedimento é uma pequena cerimônia. Unhas, cílios e
-              sobrancelhas feitos com técnica refinada, produtos premium e uma
-              estética que valoriza a sua beleza natural.
+              Aqui, cada procedimento é uma pequena cerimônia. Unhas, cílios e sobrancelhas feitos
+              com técnica refinada, produtos premium e uma estética que valoriza a sua beleza
+              natural.
             </p>
             <p className="font-serif italic text-xl text-foreground">
               Porque autoestima é o nosso maior presente.
@@ -346,7 +391,10 @@ function About() {
 
 function Services() {
   return (
-    <section id="servicos" className="py-24 lg:py-36 bg-gradient-to-b from-background via-champagne/30 to-background">
+    <section
+      id="servicos"
+      className="py-24 lg:py-36 bg-gradient-to-b from-background via-champagne/30 to-background"
+    >
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="max-w-2xl">
           <p className="eyebrow">Serviços</p>
@@ -354,8 +402,8 @@ function Services() {
             Procedimentos exclusivos, resultado impecável.
           </h2>
           <p className="mt-8 text-muted-foreground text-lg leading-relaxed">
-            Cada serviço é executado com técnica, calma e atenção aos detalhes.
-            Escolha o que combina com você — ou nos conte sobre o seu momento.
+            Cada serviço é executado com técnica, calma e atenção aos detalhes. Escolha o que
+            combina com você — ou nos conte sobre o seu momento.
           </p>
         </div>
 
@@ -398,7 +446,7 @@ function Gallery() {
     if (active === null) return;
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") setActive(null);
-      if (e.key === "ArrowRight") setActive((a) => ((a! + 1) % gallery.length));
+      if (e.key === "ArrowRight") setActive((a) => (a! + 1) % gallery.length);
       if (e.key === "ArrowLeft") setActive((a) => (a! - 1 + gallery.length) % gallery.length);
     };
     document.body.style.overflow = "hidden";
@@ -426,14 +474,8 @@ function Gallery() {
 
         <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5 auto-rows-[180px] lg:auto-rows-[240px]">
           {gallery.map((g, i) => {
-            const span = [
-              "row-span-2 col-span-2",
-              "",
-              "row-span-2",
-              "",
-              "col-span-2",
-              "row-span-1",
-            ][i] ?? "";
+            const span =
+              ["row-span-2 col-span-2", "", "row-span-2", "", "col-span-2", "row-span-1"][i] ?? "";
             return (
               <button
                 key={i}
@@ -464,14 +506,20 @@ function Gallery() {
           onClick={() => setActive(null)}
         >
           <button
-            onClick={(e) => { e.stopPropagation(); setActive(null); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setActive(null);
+            }}
             className="absolute top-6 right-6 size-11 rounded-full bg-background/10 text-background hover:bg-background/20 flex items-center justify-center"
             aria-label="Fechar"
           >
             <X className="size-5" />
           </button>
           <button
-            onClick={(e) => { e.stopPropagation(); setActive((a) => (a! - 1 + gallery.length) % gallery.length); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setActive((a) => (a! - 1 + gallery.length) % gallery.length);
+            }}
             className="absolute left-4 lg:left-10 size-11 rounded-full bg-background/10 text-background hover:bg-background/20 flex items-center justify-center"
             aria-label="Anterior"
           >
@@ -484,7 +532,10 @@ function Gallery() {
             onClick={(e) => e.stopPropagation()}
           />
           <button
-            onClick={(e) => { e.stopPropagation(); setActive((a) => (a! + 1) % gallery.length); }}
+            onClick={(e) => {
+              e.stopPropagation();
+              setActive((a) => (a! + 1) % gallery.length);
+            }}
             className="absolute right-4 lg:right-10 size-11 rounded-full bg-background/10 text-background hover:bg-background/20 flex items-center justify-center"
             aria-label="Próximo"
           >
@@ -535,8 +586,8 @@ function Testimonials() {
       <div className="mx-auto max-w-5xl px-6 lg:px-12 text-center">
         <Quote className="mx-auto size-10 text-gold" strokeWidth={1} />
         <p className="mt-8 font-serif text-3xl lg:text-5xl leading-tight italic">
-          Em breve, as palavras das nossas clientes preencherão este espaço com
-          carinho. Você pode ser uma delas.
+          Em breve, as palavras das nossas clientes preencherão este espaço com carinho. Você pode
+          ser uma delas.
         </p>
         <p className="mt-10 eyebrow">Depoimentos</p>
         <div className="mt-10">
@@ -577,7 +628,10 @@ function Location() {
               <Phone className="size-5 text-gold mt-1 shrink-0" />
               <div>
                 <p className="font-medium">Telefone</p>
-                <a href="tel:+5511956835290" className="text-muted-foreground text-sm mt-1 hover:text-foreground">
+                <a
+                  href="tel:+5511956835290"
+                  className="text-muted-foreground text-sm mt-1 hover:text-foreground"
+                >
                   {PHONE_DISPLAY}
                 </a>
               </div>
@@ -614,7 +668,12 @@ function Contact() {
     { icon: MessageCircle, label: "WhatsApp", value: PHONE_DISPLAY, href: WHATSAPP },
     { icon: Instagram, label: "Instagram", value: "@ket.ysilvaa", href: INSTAGRAM },
     { icon: Phone, label: "Telefone", value: PHONE_DISPLAY, href: "tel:+5511956835290" },
-    { icon: MapPin, label: "Endereço", value: "Centro, VGP/SP", href: `https://www.google.com/maps?q=${MAPS_QUERY}` },
+    {
+      icon: MapPin,
+      label: "Endereço",
+      value: "Centro, VGP/SP",
+      href: `https://www.google.com/maps?q=${MAPS_QUERY}`,
+    },
   ];
   return (
     <section id="contato" className="py-24 lg:py-36">
@@ -666,10 +725,26 @@ function Footer() {
         <div>
           <p className="eyebrow">Navegar</p>
           <ul className="mt-5 space-y-2 text-sm">
-            <li><a href="#sobre" className="hover:text-gold transition-colors">Sobre</a></li>
-            <li><a href="#servicos" className="hover:text-gold transition-colors">Serviços</a></li>
-            <li><a href="#galeria" className="hover:text-gold transition-colors">Galeria</a></li>
-            <li><a href="#contato" className="hover:text-gold transition-colors">Contato</a></li>
+            <li>
+              <a href="#sobre" className="hover:text-gold transition-colors">
+                Sobre
+              </a>
+            </li>
+            <li>
+              <a href="#servicos" className="hover:text-gold transition-colors">
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a href="#galeria" className="hover:text-gold transition-colors">
+                Galeria
+              </a>
+            </li>
+            <li>
+              <a href="#contato" className="hover:text-gold transition-colors">
+                Contato
+              </a>
+            </li>
           </ul>
         </div>
         <div>
@@ -691,8 +766,13 @@ function Footer() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-12 py-6 flex flex-wrap items-center justify-between gap-4 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Espaço Kety Silva Beauty Studio. Todos os direitos reservados.</p>
-          <p>Feito com <Heart className="inline size-3 text-gold" /> em Vargem Grande Paulista.</p>
+          <p>
+            © {new Date().getFullYear()} Espaço Kety Silva Beauty Studio. Todos os direitos
+            reservados.
+          </p>
+          <p>
+            Feito com <Heart className="inline size-3 text-gold" /> em Vargem Grande Paulista.
+          </p>
         </div>
       </div>
     </footer>

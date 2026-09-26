@@ -54,7 +54,9 @@ function NotFoundComponent() {
           A página que você procura não existe ou foi movida.
         </p>
         <div className="mt-8">
-          <Link to="/" className="btn-primary">Voltar ao início</Link>
+          <Link to="/" className="btn-primary">
+            Voltar ao início
+          </Link>
         </div>
       </div>
     </div>
@@ -77,12 +79,17 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
           <button
-            onClick={() => { router.invalidate(); reset(); }}
+            onClick={() => {
+              router.invalidate();
+              reset();
+            }}
             className="btn-primary"
           >
             Tentar novamente
           </button>
-          <a href="/" className="btn-ghost">Início</a>
+          <a href="/" className="btn-ghost">
+            Início
+          </a>
         </div>
       </div>
     </div>
